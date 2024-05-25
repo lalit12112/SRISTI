@@ -7,6 +7,7 @@ export default function Root() {
         <div id="logo-container">
           <img src={reactIgm} alt="Logo" id="logo" />
         </div>
+        <div className="text-4xl text-red-500">Hello</div>
         <div id="nav-container">
           <nav>
             <ul>
