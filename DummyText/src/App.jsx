@@ -10,14 +10,15 @@ import ErrorPage from "./pages/Error";
 import Help from "./pages/Help";
 import Root from "./pages/Root";
 import './App.css';
+import Login from "./pages/Login";
 
 const App = () => {
 
   const router = createBrowserRouter([
     {
       path: "/",
-      element: <Root/>,
-      errorElement: <ErrorPage/>,
+      element: <Root />,
+      errorElement: <ErrorPage />,
       children: [
         {
           index: true,
@@ -35,7 +36,10 @@ const App = () => {
           path: "/Help",
           element: <Help />,
         },
-
+        {
+          path: "/login",
+          element: <Login />,
+        },
       ],
     },
   ]);
